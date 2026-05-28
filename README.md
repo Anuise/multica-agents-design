@@ -28,7 +28,7 @@
 multica-agents-design/
 └── workspace/           # 工作空間根目錄
     ├── agents/          # 各 Agent 的設計規格（職責、輸入輸出、限制）
-    ├── skills/          # 可重複使用的 Skill 定義
+    ├── skills/          # 可重複使用的 Skill 定義（每個 Skill 一個資料夾，內含 SKILL.md）
     ├── squads/          # Squad 組成與任務路由設計
     └── autopilots/      # 定期自動化任務規格
 ```
