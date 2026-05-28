@@ -26,18 +26,19 @@
 
 ```
 multica-agents-design/
-├── agents/          # 各 Agent 的設計規格（職責、輸入輸出、限制）
-├── skills/          # 可重複使用的 Skill 定義
-├── squads/          # Squad 組成與任務路由設計
-└── autopilots/      # 定期自動化任務規格
+└── workspace/           # 工作空間根目錄
+    ├── agents/          # 各 Agent 的設計規格（職責、輸入輸出、限制）
+    ├── skills/          # 可重複使用的 Skill 定義
+    ├── squads/          # Squad 組成與任務路由設計
+    └── autopilots/      # 定期自動化任務規格
 ```
 
 ## 設計一個 Agent 的流程
 
-1. **定義職責** — 在 `agents/` 下建立設計文件，描述這個 Agent 做什麼、不做什麼
-2. **設計 Skills** — 將可重用的能力抽成 `skills/`，供多個 Agent 共用
-3. **組成 Squad** — 在 `squads/` 下定義多個 Agent 如何協作，並指定 Squad Leader 的路由邏輯
-4. **設定 Autopilot**（選用）— 在 `autopilots/` 下定義觸發條件與排程
+1. **定義職責** — 在 `workspace/agents/` 下建立設計文件，描述這個 Agent 做什麼、不做什麼
+2. **設計 Skills** — 將可重用的能力抽成 `workspace/skills/`，供多個 Agent 共用
+3. **組成 Squad** — 在 `workspace/squads/` 下定義多個 Agent 如何協作，並指定 Squad Leader 的路由邏輯
+4. **設定 Autopilot**（選用）— 在 `workspace/autopilots/` 下定義觸發條件與排程
 
 ## 支援的 Agent Runtime
 
